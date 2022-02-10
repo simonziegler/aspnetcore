@@ -38,6 +38,8 @@ internal class ChangeDetection
         => type.IsPrimitive
         || type == typeof(string)
         || type == typeof(DateTime)
+        || type == typeof(DateOnly)
+        || type == typeof(TimeOnly)
         || type == typeof(Type)
         || type == typeof(decimal)
         || type == typeof(Guid);
